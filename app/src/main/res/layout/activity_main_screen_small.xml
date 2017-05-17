@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_screen"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.HPA.securehealth.MainScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trackersTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trackers"
+                android:textSize="18dp"
+                android:textColor="@color/colorButtonText"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/exerciseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise"
+                android:textSize="18dp"
+                android:textColor="@color/colorButtonText"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/profileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="18dp"
+                android:textColor="@color/colorButtonText"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/stepCounter"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/topFrame"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/roundstepcounter" />
+
+    <ImageView
+        android:id="@+id/waterTracker"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/topFrame"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/roundglass" />
+
+    <ImageView
+        android:id="@+id/heartrateTracker"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/stepCounter"
+        android:layout_marginTop="00dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/roundheartrate" />
+
+
+    <ImageView
+        android:id="@+id/weightTracker"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/stepCounter"
+        android:layout_marginTop="00dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/roundweight" />
+
+
+
+
+
+</RelativeLayout>

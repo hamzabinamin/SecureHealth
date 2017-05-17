@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.HPA.securehealth.SignIn">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Secure Health"
+        android:textSize="34dp"
+        android:textColor="@color/colorButtonText"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:hint="Enter Email..."
+        android:textColorHint="@color/colorText"
+        android:textSize="22dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/outline2"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:hint="Enter Password..."
+        android:textColorHint="@color/colorText"
+        android:textSize="22dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/outline2"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:textColor="@color/colorButtonText"
+        android:background="@color/colorButton"/>
+
+
+</RelativeLayout>

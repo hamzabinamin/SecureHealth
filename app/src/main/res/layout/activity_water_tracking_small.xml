@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_water_tracking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HPA.securehealth.WaterTracking">
+
+    <FrameLayout
+        android:id="@+id/topFrame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trackersTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trackers"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/exerciseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/profileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topFrame"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="You have had"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/glassesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/water"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="0"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/water2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/glassesCount"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Glasses of Water"
+        android:textSize="22dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Have 8 glasses of water every day!"
+        android:textSize="20dp"
+        android:textColor="@color/colorButtonText"/>
+
+
+    <Button
+        android:id="@+id/addWaterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add"
+        android:background="@color/colorButtonText"/>
+
+</RelativeLayout>

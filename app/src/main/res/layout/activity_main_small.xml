@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.HPA.securehealth.MainActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Secure Health"
+        android:textSize="34dp"
+        android:textColor="@color/colorButtonText"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="100dp"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:textColor="@color/colorButtonText"
+        android:background="@color/colorButton"/>
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="5dp"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textColor="@color/colorButtonText"
+        android:background="@color/colorButton"/>
+
+    <TextView
+        android:id="@+id/continueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Continue without Account"
+        android:textSize="20dp"
+        android:textColor="@color/colorButtonText"
+        android:background="@color/colorButton"/>
+
+
+</RelativeLayout>

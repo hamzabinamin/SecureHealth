@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weight_tracker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.HPA.securehealth.WeightTracker">
+
+    <FrameLayout
+        android:id="@+id/topFrame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/trackersTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trackers"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/exerciseTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/profileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="24dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/topFrame"
+        android:text="Your weight is"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:id="@+id/weightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/weight"
+        android:text=""
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/weightText"
+        android:text=""
+        android:hint="Enter your Weight in KGs"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:background="@drawable/outline" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/weightEditText"
+        android:text=""
+        android:hint="Enter your Height in cm"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:background="@drawable/outline" />
+
+    <Button
+        android:id="@+id/weightButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/heightEditText"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:background="@color/colorButtonText"/>
+
+
+    <TextView
+        android:id="@+id/weightStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:text=""
+        android:textSize="22dp"
+        android:layout_below="@+id/weightButton"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
